@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P03 milestone1</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="vendors/scrolloverflow.js"></script>
+
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          anchors: ['projects', 'project_sparechange', 'project_boardgame', 'about_me'],
+          // sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
+          slidesNavigation: true,
+        });
+      });
+    </script>
+    <!--  ------------------------------------------------------------>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/fzp0fam.css">
+  </head>
+
+  <body>
+    <section id="header">
+      <a href="index.html">
+        <p id="icontest">
+          <strong>IVAN ZHAO</strong>
+        </p>
+      </a>
+
+      <div id="navbar" class="dropdown">
+        <nav>
+          <ul>
+            <li><a href="#projects">Home</a></li>
+            <li><a href="#project_sparechange">Spare Change</a></li>
+            <li><a href="#project_boardgame">Board Game</a></li>
+            <li><a href="#about_me">About Me</a></li>
+            <li><a href="http://www.sfu.ca/~zhzhao/iat339/P03milestone1/styleguide.html">Style Guide</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+
+    <section id="fullpage" class="main">
+
+      <div class="project_container section">
+        <div class ="project_content">
+          <h1>Projects</h1>
+          <div class="gallery" id="gal1">
+            <a href="project_sparechange.html">
+              <div class="gallery_icon"></div>
+              <div class="gallery_overlay">
+                <h2> Spare Change</h2>
+                <!-- <p> Quick Intro </p> -->
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery" id="gal2">
+            <a href="project_boardgame.html">
+              <div class="gallery_icon"></div>
+              <div class="gallery_overlay">
+                <h2> Heroes and Dragons</h2>
+                <!-- <p> Quick Intro </p> -->
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="project_container section">
+        <div class="project_content">
+          <h1>Spare Change</h1>
+
+        <div class="project_intro slide" id="slide1">
+
+          <p>
+            <b>Partners:</b> Hector Bustillos, Christopher Wong, Phoebe Lim, Linda Shu <br>
+            <b>Programs Used:</b>  DAQRI 4D Studio Augmented Reality Program, Adobe Illustrator <br>
+            <b>My Role:</b> Concept Ideation, Interviewer, Media Content Creator
+          </p>
+        </div>
+
+        <div class="project_slide slide" id="slide2">
+          <h2>Objective</h2>
+          <p>
+            This final project of our interactive art course was to integrate
+            artistic and interactive strategies into one final art piece.
+            Initially inspired by the “Humans of New York” blog, An idea of photographing students around campus and gathering their background stories was born.
+            However, upon review from our professor, it was clear that this project lacked depth and interaction.
+          </p>
+        </div>
+        <div class="project_slide slide" id="slide3">
+          <h2>Process</h2>
+          <p>
+            Around that period of time, I was interested in “random acts of kindness”.
+            I would walk past homeless people on the short distance from the train station to my campus regularly,
+            and would often ponder about how the homeless would end up in their situation where society pass them by without a glance on the daily.
+            I gave the suggestion that we should gather the life stories of the homeless instead, and our project took off once more with a new direction.
+          </p>
+        </div>
+        <div class="project_slide slide" id="slide4">
+          <p>
+            The new design goal was to rehumanize the unhoused individuals that we overlook regularly in an interactive and innovative way.
+            When we interviewed the homeless around Granville-Burrard area, it gave these people a new dimension once we learned their history, dreams, struggles, and fears.
+          </p>
+        </div>
+        <div class="project_slide slide" id="slide5">
+          <p>
+            The interactive element we incorporated into the project was augmented reality.
+            We used DAQRI 4D software to put the each interview onto a poster. The poster itself was a grim back alley,
+            and only when a user hover over the poster with the DAQRI app, would each interviewee appear on the screen,
+            which the users can then click on to learn more about. It accurately reflected the ignored nature of these individuals,
+            yet would literally give a new dimension to the interviewed.
+          </p>
+        </div>
+        <div class="project_slide slide" id="slide6">
+          <h2>Reflection</h2>
+          <p>
+            We are very pleased with the project.
+            We’ve had more fun than we expected making a real human connection with these people.
+            If given more time, we would have liked to include the audio / video recordings onto the poster as well,
+            which we wanted to but unfortunately couldn’t due to a deadline restraint.
+          </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="project_container section">
+        <div class="project_content">
+          <h1>Heroes and Dragons</h1>
+
+          <div class="project_intro slide">
+            <p>
+              <b>Partners:</b>  George Krutous, Kelvin Lam, Maggie Liu <br>
+              <b>Programs Used:</b>  Unity Engine, Adobe Illustrator, Adobe Photoshop <br>
+              <b>My Role:</b> Lead Game Designer, Illustrator, Editor
+
+            </p>
+          </div>
+          <div class="project_slide slide">
+            <h2>Objective</h2>
+            <p>
+              This board game project was a great opportunity or me to apply my love of games and game knowledge which heavily influenced my upbringing.
+              We were to design a board game with at least three of the four economic activities of accumulating, crafting, conversion and trade.
+              The board game also needed balancing between chance and strategy, game objects, transitive and/or intransitive mechanics, bartering, currency,
+              production mechanisms, positive and negative feedback loops, and deadlock prevention.
+            </p>
+          </div>
+          <div class="project_slide slide">
+            <h2>Process</h2>
+            <p>
+              Growing up playing Age of Empires II, Red Alert 2 and watching my Uncles play Heroes of Might and Magic III,
+              I had a solid foundation in game knowledge and economy and a fascination with medieval theme.
+              My passion for gaming lead me to easily brainstorm up many ideas, almost all of which were implemented into the game.
+              The game board had tiles for resources, event cards (inspired from monopoly), and a boss lair.
+              This was done to give players with different playstyles a variety of ways to win  the game, inspired by Civilization 5.
+            </p>
+          </div>
+          <div class="project_slide slide">
+            <p>
+              In order to cater to all types of players, we incorporated bosses to kill, cities to build, characters to roleplay as,
+              resources to manage, daily events, and event tiles. Our attempt to indulge all player bases resulted in a game that was too wide in scope.
+              In order to design and complete each game mechanic and aesthetic,
+              we quickly ran out of time and had to sacrifice the time allotted for testing, as well as missing the deadline,
+              resulting in a late and mildly unbalanced game. Though overdue, our project easily fulfilled game mechanic, aesthetic, and fidelity requirements.
+            </p>
+          </div>
+          <div class="project_slide slide">
+            <h2>Reflection</h2>
+            <p>
+              If given the chance to do this project again, I would tell myself not to let my passion overrun the scope of the project,
+              narrow the game down by reducing some event mechanics and building cards.
+              I would focus on the necessities and scale down the project to a more manageable size,
+              trimming complexity in the game for a more positive user experience.
+            </p>
+          </div>
+          <div class="project_slide slide">
+            <p>
+              The goal of the game was to compete for the most victory points which can be earned by converting earned resources
+              into building cards in the players starting city (corner), as well as killing the dragon in the lair which
+              respawns regularly with increased difficulty and loot + resources
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project_container section">
+        <div class="project_content">
+          <h1>About Me</h1>
+        </div>
+        <div class="project_intro slide">
+          <div class="project_content">
+            <p>
+              Hi! My name is Ivan, I'm currently a third year SFU student majoring in interactive arts and technology
+              with a curious mind and an interest in all things interactive.
+            </p>
+            <p>
+              My passion lies in seeing people smile, and I aim to do so through my interactive projects!
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <footer id="footer">
+        <div class="footer_hline"></div>
+        <div class="footer_info">
+          <p> Ivan Zhao IAT 339 </p>
+        </div>
+      </footer>
+
+    </section>
+
+
+  </body>
+</html>
