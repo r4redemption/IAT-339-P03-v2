@@ -5,6 +5,8 @@
  *
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
+
+ @media only screen and (min-width: 400px) {
 html.fp-enabled,
 .fp-enabled body {
     margin: 0;
@@ -68,7 +70,7 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 20%;
+    left: 5%;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
     border-color: transparent #fff transparent transparent;
@@ -78,6 +80,8 @@ html.fp-enabled,
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;
 }
+
+
 .fp-scrollable {
     overflow: hidden;
     position: relative;
@@ -113,9 +117,9 @@ html.fp-enabled,
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-    left: 0 !important;
-    right: 0;
-    margin: 0 auto !important;
+    /* left: 0 !important; */
+    right: 35%;
+    /* margin: 0 auto !important; */
 }
 .fp-slidesNav.bottom {
     bottom: 17px;
@@ -218,4 +222,18 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-slide,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
     height: auto !important;
+}
+}
+@media only screen and (min-width: 950px) {
+  .fp-controlArrow.fp-prev {
+      left: 20%;
+      width: 0;
+      border-width: 38.5px 34px 38.5px 0;
+      border-color: transparent #fff transparent transparent;
+  }
+  .fp-controlArrow.fp-next {
+      right: 5%;
+      border-width: 38.5px 0 38.5px 34px;
+      border-color: transparent transparent transparent #fff;
+  }
 }
