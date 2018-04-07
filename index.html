@@ -21,7 +21,7 @@
       $(document).ready(function() {
         $('#fullpage').fullpage({
           anchors: ['projects', 'project_sparechange', 'project_boardgame', 'about_me'],
-          sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
+          // sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
           slidesNavigation: true,
         });
       });
@@ -57,7 +57,7 @@
 
     <section id="fullpage" class="main">
 
-      <div class="project_container section">
+      <div class="project_container section" id="section1">
         <div class ="project_content">
           <h1>Projects</h1>
           <div class="gallery" id="gal1">
@@ -84,11 +84,11 @@
 
       </div>
 
-      <div class="project_container section">
+      <div class="project_container section" id="section2">
         <div class="project_content">
           <h1>Spare Change</h1>
 
-        <div class="project_intro slide" id="slide1">
+        <div class="project_intro slide">
 
           <p>
             <b>Partners:</b> Hector Bustillos, Christopher Wong, Phoebe Lim, Linda Shu <br>
@@ -97,112 +97,173 @@
           </p>
         </div>
 
-        <div class="project_slide slide" id="slide2">
+        <div class="project_slide slide">
+          <div class="project_img" id="sc1"></div>
+          <div class="project_desc">
           <h2>Objective</h2>
           <p>
             This final project of our interactive art course was to integrate
             artistic and interactive strategies into one final art piece.
             Initially inspired by the “Humans of New York” blog, An idea of photographing students around campus and gathering their background stories was born.
-            However, upon review from our professor, it was clear that this project lacked depth and interaction.
+
           </p>
+          </div>
         </div>
-        <div class="project_slide slide" id="slide3">
+        <div class="project_slide slide">
+          <div class="project_img" id="sc1"></div>
+          <div class="project_desc">
           <h2>Process</h2>
           <p>
-            Around that period of time, I was interested in “random acts of kindness”.
-            I would walk past homeless people on the short distance from the train station to my campus regularly,
-            and would often ponder about how the homeless would end up in their situation where society pass them by without a glance on the daily.
-            I gave the suggestion that we should gather the life stories of the homeless instead, and our project took off once more with a new direction.
+            Our art piece was lacking in meaning as well as interaction. Walking past homeless individuals often,
+            I suggest that we can interview them instead.
+            I suggested homeless individuals because they’re so often neglected and not all of them
+            ended up in that situation at their own action; I was curious about their life stories.
           </p>
+          </div>
         </div>
-        <div class="project_slide slide" id="slide4">
+        <div class="project_slide slide">
+          <div class="project_img" id="sc1"></div>
+          <div class="project_desc">
           <p>
-            The new design goal was to rehumanize the unhoused individuals that we overlook regularly in an interactive and innovative way.
-            When we interviewed the homeless around Granville-Burrard area, it gave these people a new dimension once we learned their history, dreams, struggles, and fears.
+            The new design goal was to interview homeless individuals with deep questions that
+            we all ponder as human beings in an interactive and innovative way.
+            This interview would give the unhoused individuals a new dimension we so seldom see.
+            Thus rehumanizing them through communication. With a new meaningful design goal in mind,
+            we needed to implement an interactive element to our project.
           </p>
+          </div>
         </div>
-        <div class="project_slide slide" id="slide5">
+        <div class="project_slide slide">
+          <div class="project_img" id="sc1"></div>
+          <div class="project_desc">
           <p>
-            The interactive element we incorporated into the project was augmented reality.
+            After group discussions, we agreed upon using augmented reality.
             We used DAQRI 4D software to put the each interview onto a poster. The poster itself was a grim back alley,
             and only when a user hover over the poster with the DAQRI app, would each interviewee appear on the screen,
             which the users can then click on to learn more about. It accurately reflected the ignored nature of these individuals,
             yet would literally give a new dimension to the interviewed.
           </p>
+          </div>
         </div>
-        <div class="project_slide slide" id="slide6">
-          <h2>Reflection</h2>
+        <div class="project_slide slide">
+          <div class="project_img" id="sc1"></div>
+          <div class="project_desc">
           <p>
-            We are very pleased with the project.
-            We’ve had more fun than we expected making a real human connection with these people.
-            If given more time, we would have liked to include the audio / video recordings onto the poster as well,
-            which we wanted to but unfortunately couldn’t due to a deadline restraint.
+            The group and I split into 2 groups to interview the homeless around Granville and Burrard skytrain stations.
+            We asked questions about their dreams, fears, most treasured memories, favourite songs, plans for the future,
+            and many other questions to round out their character in multi dimensional aspects.
           </p>
           </div>
+          </div>
+          <div class="project_slide slide">
+            <div class="project_img" id="sc1"></div>
+            <div class="project_desc">
+            <h2>Reflection</h2>
+            <p>
+              We are very pleased with the project.
+              We’ve had more fun than we expected making a real human connection with these people.
+              <!-- It adequately reflects the status of the homeless not in a financial, but a personal manner. -->
+              Our project reflected the status of the homeless in a personal matter and the interactive element added to the meaning of the project.
+              <!-- The project was meaningful and the interactive element added to the meaning of the project as well. -->
+              However if given more time, we would have liked to include the audio / video recordings onto the poster as well,
+              which we wanted to but unfortunately couldn’t due to a deadline restraint.
+            </p>
+            </div>
+            </div>
         </div>
 
       </div>
 
-      <div class="project_container section">
+      <div class="project_container section" id="section3">
         <div class="project_content">
           <h1>Heroes and Dragons</h1>
 
           <div class="project_intro slide">
             <p>
               <b>Partners:</b>  George Krutous, Kelvin Lam, Maggie Liu <br>
-              <b>Programs Used:</b>  Unity Engine, Adobe Illustrator, Adobe Photoshop <br>
+              <b>Programs Used:</b> Adobe Illustrator, Adobe Photoshop <br>
               <b>My Role:</b> Lead Game Designer, Illustrator, Editor
 
             </p>
           </div>
           <div class="project_slide slide">
+            <div class="project_img" id="sc1"></div>
+            <div class="project_desc">
             <h2>Objective</h2>
             <p>
-              This board game project was a great opportunity or me to apply my love of games and game knowledge which heavily influenced my upbringing.
-              We were to design a board game with at least three of the four economic activities of accumulating, crafting, conversion and trade.
-              The board game also needed balancing between chance and strategy, game objects, transitive and/or intransitive mechanics, bartering, currency,
-              production mechanisms, positive and negative feedback loops, and deadlock prevention.
+            Our final assignment was to construct and demonstrate a polished physical board game which uses a complex economic system.
+            My team and I chose a medieval and magical setting for the board game,
+            and we started brainstorming off the many games and game mechanics that we’ve experienced in our lives.
             </p>
+            </div>
           </div>
           <div class="project_slide slide">
+            <div class="project_img" id="sc1"></div>
+            <div class="project_desc">
             <h2>Process</h2>
             <p>
-              Growing up playing Age of Empires II, Red Alert 2 and watching my Uncles play Heroes of Might and Magic III,
-              I had a solid foundation in game knowledge and economy and a fascination with medieval theme.
-              My passion for gaming lead me to easily brainstorm up many ideas, almost all of which were implemented into the game.
-              The game board had tiles for resources, event cards (inspired from monopoly), and a boss lair.
-              This was done to give players with different playstyles a variety of ways to win  the game, inspired by Civilization 5.
+            We were given a very basic board game and was given the goal to redesign our game around it.
+            Starting off with a variety of resources,
+            we need to turn those resources into ways the players could win the game.
             </p>
+            </div>
           </div>
           <div class="project_slide slide">
+            <div class="project_img" id="sc1"></div>
+            <div class="project_desc">
             <p>
-              In order to cater to all types of players, we incorporated bosses to kill, cities to build, characters to roleplay as,
-              resources to manage, daily events, and event tiles. Our attempt to indulge all player bases resulted in a game that was too wide in scope.
-              In order to design and complete each game mechanic and aesthetic,
-              we quickly ran out of time and had to sacrifice the time allotted for testing, as well as missing the deadline,
-              resulting in a late and mildly unbalanced game. Though overdue, our project easily fulfilled game mechanic, aesthetic, and fidelity requirements.
+              We took notice of multiple victory paths in Civilization and Settlers of Catan and took a similar approach:
+              Players can earn victory points by building their city, or slaying the dragon.
+              To achieve that, the players would need to choose to convert their resources into buildings for their city.
             </p>
+            </div>
           </div>
           <div class="project_slide slide">
-            <h2>Reflection</h2>
+            <div class="project_img" id="sc1"></div>
+            <div class="project_desc">
             <p>
-              If given the chance to do this project again, I would tell myself not to let my passion overrun the scope of the project,
-              narrow the game down by reducing some event mechanics and building cards.
-              I would focus on the necessities and scale down the project to a more manageable size,
-              trimming complexity in the game for a more positive user experience.
+              My team and I easily came up with a wide array of ideas to implement into the game such as item crafting,
+              resource trading, hero abilities, random event tiles, daily events, etc.
+              That way players can choose their path by exploring events, managing resources, crafting items to upgrade their hero.
+
             </p>
+            </div>
           </div>
           <div class="project_slide slide">
+            <div class="project_img" id="sc1"></div>
+            <div class="project_desc">
             <p>
-              The goal of the game was to compete for the most victory points which can be earned by converting earned resources
-              into building cards in the players starting city (corner), as well as killing the dragon in the lair which
-              respawns regularly with increased difficulty and loot + resources
+              When we conducted gameplay tests on our prototype, we realized that the game lasted too long.
+              We lowered the victory point requirement, and introduced a new gold resource which could replace any other resource,
+              or be used as currency. This added more flow in terms of game economy.
+            </p>
+            </div>
+          </div>
+          <div class="project_slide slide">
+            <div class="project_img" id="sc1"></div>
+            <div class="project_desc">
+            <h2>Reflection </h2>
+            <p>
+              Our final board game was revised with much higher fidelity.
+              Since we were so excited to create our own game and tried to cater to all levels and types of players,
+              we quickly ran out of time in our schedule and had to cut down on play testing just to finish the project.
+            </p>
+            </div>
+          </div>
+          <div class="project_slide slide">
+            <div class="project_img" id="sc1"></div>
+            <div class="project_desc">
+            <p>
+              If I was given the chance to do this project again,
+              I would focus down on a few game mechanics instead of making such a broad game that had everything.
+              We easily satisfied the economy and complexity standards but lost marks for lateness since we needed an extra day to finish.
+            </div>
             </p>
           </div>
         </div>
       </div>
 
-      <div class="project_container section">
+      <div class="project_container section" id="section4">
         <div class="project_content">
           <h1>About Me</h1>
         </div>
