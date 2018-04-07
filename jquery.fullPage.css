@@ -70,13 +70,13 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 5%;
+    left: 3%;
     width: 0;
     border-width: 38.5px 17px 38.5px 0;
     border-color: transparent #fff transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 5%;
+    right: 3%;
     border-width: 38.5px 0 38.5px 20px;
     border-color: transparent transparent transparent #fff;
 }
@@ -118,7 +118,7 @@ html.fp-enabled,
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     /* left: 0 !important; */
-    right: 35%;
+    right: 24%;
     /* margin: 0 auto !important; */
 }
 .fp-slidesNav.bottom {
@@ -225,6 +225,17 @@ html.fp-enabled,
 }
 }
 @media only screen and (min-width: 950px) {
+  .fp-slidesNav{
+      position: absolute;
+      z-index: 4;
+      opacity: 1;
+      -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+      /* left: 0 !important; */
+      right: 35%;
+      /* margin: 0 auto !important; */
+  }
   .fp-controlArrow.fp-prev {
       left: 20%;
       width: 0;
