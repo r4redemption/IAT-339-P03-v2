@@ -31,6 +31,7 @@
     <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/fzp0fam.css">
+
   </head>
 
   <body>
@@ -41,9 +42,10 @@
         </p>
       </a>
 
-      <div id="navbar" class="dropdown">
-
-        <nav>
+      <div id="navbar" class="navbar_overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <nav class ="navbar_overlay_content">
+          <!-- <a href="#" id="menu-icon"></a> -->
           <ul>
             <li><a href="#projects">Home</a></li>
             <li><a href="#project_sparechange">Spare Change</a></li>
@@ -54,6 +56,8 @@
         </nav>
       </div>
     </section>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
 
     <section id="fullpage" class="main">
@@ -111,7 +115,7 @@
           </div>
         </div>
         <div class="project_slide slide">
-          <div class="project_img" id="sc1"></div>
+          <div class="project_img" id="sc2"></div>
           <div class="project_desc">
           <h2>Process</h2>
           <p>
@@ -123,7 +127,7 @@
           </div>
         </div>
         <div class="project_slide slide">
-          <div class="project_img" id="sc1"></div>
+          <div class="project_img" id="sc3"></div>
           <div class="project_desc">
           <h2>Process</h2>
           <p>
@@ -136,7 +140,7 @@
           </div>
         </div>
         <div class="project_slide slide">
-          <div class="project_img" id="sc1"></div>
+          <div class="project_img" id="sc4"></div>
           <div class="project_desc">
           <h2>Process</h2>
           <p>
@@ -149,7 +153,7 @@
           </div>
         </div>
         <div class="project_slide slide">
-          <div class="project_img" id="sc1"></div>
+          <div class="project_img" id="sc5"></div>
             <div class="project_desc">
             <h2>Process</h2>
             <p>
@@ -160,7 +164,7 @@
             </div>
           </div>
         <div class="project_slide slide">
-          <div class="project_img" id="sc1"></div>
+          <div class="project_img" id="sc6"></div>
             <div class="project_desc">
             <h2>Reflection</h2>
             <p>
@@ -191,7 +195,7 @@
             </p>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="sc1"></div>
+            <div class="project_img" id="bg1"></div>
             <div class="project_desc">
             <h2>Objective</h2>
             <p>
@@ -202,7 +206,7 @@
             </div>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="sc1"></div>
+            <div class="project_img" id="bg2"></div>
             <div class="project_desc">
             <h2>Process</h2>
             <p>
@@ -213,7 +217,7 @@
             </div>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="sc1"></div>
+            <div class="project_img" id="bg3"></div>
             <div class="project_desc">
             <p>
               We took notice of multiple victory paths in Civilization and Settlers of Catan and took a similar approach:
@@ -223,7 +227,7 @@
             </div>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="sc1"></div>
+            <div class="project_img" id="bg4"></div>
             <div class="project_desc">
             <p>
               My team and I easily came up with a wide array of ideas to implement into the game such as item crafting,
@@ -234,7 +238,7 @@
             </div>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="sc1"></div>
+            <div class="project_img" id="bg5"></div>
             <div class="project_desc">
             <p>
               When we conducted gameplay tests on our prototype, we realized that the game lasted too long.
@@ -244,7 +248,7 @@
             </div>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="sc1"></div>
+            <div class="project_img" id="bg6"></div>
             <div class="project_desc">
             <h2>Reflection </h2>
             <p>
@@ -255,7 +259,7 @@
             </div>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="sc1"></div>
+            <div class="project_img" id="bg7"></div>
             <div class="project_desc">
             <p>
               If I was given the chance to do this project again,
@@ -293,8 +297,20 @@
         </div>
       </footer>
 
+
+
     </section>
 
+
+    <script>
+    function openNav() {
+        document.getElementById("navbar").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("navbar").style.width = "0%";
+    }
+    </script>
 
   </body>
 </html>

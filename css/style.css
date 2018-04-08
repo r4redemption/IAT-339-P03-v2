@@ -30,7 +30,16 @@
 /* ====================================================================== */
 /* ======================================================= PHONE SETTINGS */
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 300px){
+
+
+#header{
+  position: fixed;
+  display: block;
+  background:white;
+  width:100%;
+  z-index: 3;
+}
 #icontest{
   font-family: 'Europa', sans-serif;
   padding: 0.15em 0.35em;
@@ -38,7 +47,7 @@
   margin:0 0px 0px 1%;
   position:fixed;
   color: black;
-  z-index:9999;
+  /* z-index:9999; */
 }
 #icontest:visited {
   color: black;
@@ -50,13 +59,15 @@
   color: black;
 }
 
+/* =================================================================== NAVBAR */
+
 #navbar{
-  position: relative;
-  float: right;
+  float:left;
+  left:0;
   display: block;
-  /* position:fixed; */
-  /* top:55%; */
-  right:1%;
+  position:fixed;
+  top:55%;
+  left:1%;
   z-index: 5;
 }
 #navbar ul{
@@ -65,6 +76,7 @@
   padding: 0;
 }
 #navbar ul li{
+  display:block;
   padding: 1em 0px 1em;
 }
 #navbar ul li a{
@@ -77,26 +89,25 @@
   text-decoration: none;
 }
 
+#navbar a:link {
+    color: black;
+}
+#navbar a:visited {
+    color: black;
+}
+#navbar a:hover {
+    color: #8D8D8D;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#navbar a:active {
+    color: white;
+}
 
 
-.main .project_intro{
-  text-align: right;
-}
-.main h1{
-  font-size: 3em;
-  text-align: right;
-  font-family: 'Europa', sans-serif;
-}
-.main h2{
-  font-size: 1.5em;
-  font-family: 'Europa', sans-serif;
-  padding-left: 1em;
-}
 
-.main p{
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-}
+
 
 
 /* ------------------------------------------------------ temporary cards */
@@ -125,7 +136,8 @@
 
 /* ------------------------------------------------------------ main styling */
 .main h1{
-  font-size: 3em;
+  text-align: right;
+  font-size: 2em;
   font-family: 'Europa', sans-serif;
   padding: 0.5em 0;
   margin-top:1em;
@@ -135,17 +147,18 @@
 .main h2{
   font-size: 1.5em;
   font-family: 'Europa', sans-serif;
-  padding-left: 1em;
 }
 
 .main p{
   font-family: 'Lato', sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 140%;
   letter-spacing: 0.00625em;
   text-indent: 1.3em;
 }
-
+.main .project_intro{
+  text-align: right;
+}
 /* ------------------------------------------------------ front page gallery */
 .gallery{
   position:relative;
@@ -219,7 +232,7 @@
 /* ============================================================= PAGE LAYOUT */
 #header{
   height: auto;
-  position: static;
+  position: absolute;
   overflow:hidden;
 }
 
@@ -239,7 +252,7 @@ body{
   margin: 0 auto;
 }
 .project_content h1{
-  padding-top:15%;
+  padding-top:30%;
   /* padding-left:25%; */
   margin: 0 auto;
 }
@@ -287,7 +300,11 @@ body{
 
 /*========================================================================= */
 /*======================================================== MONITOR SETTINGS */
+
 @media only screen and (min-width: 950px) {
+  #header{
+    position: static;
+  }
   .gallery{
     width: 48%;
     margin: 0 1%;
@@ -340,7 +357,12 @@ body{
     font-size: 2.5em;
   }
 
+
+
+
   #navbar{
+    float:left;
+    left:0;
     display: block;
     position:fixed;
     top:55%;
@@ -354,6 +376,7 @@ body{
     padding: 0;
   }
   #navbar ul li{
+    display:block;
     padding: 1em 0px 1em;
   }
   #navbar ul li a{
@@ -365,21 +388,8 @@ body{
     transition: transform 0.8s;
     text-decoration: none;
   }
-  #navbar a:link {
-      color: black;
-  }
-  #navbar a:visited {
-      color: black;
-  }
-  #navbar a:hover {
-      color: #8D8D8D;
-      -ms-transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-  }
-  #navbar a:active {
-      color: white;
-  }
+
+
   /* ------------------------------------------------------------ main styling */
   .main h1{
     font-size: 6em;
