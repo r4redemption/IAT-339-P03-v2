@@ -57,7 +57,7 @@
       </div>
     </section>
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <span style="font-size:30px;cursor:pointer" id="dropicon" onclick="toggleNav()">&#9776; open</span>
 
 
     <section id="fullpage" class="main">
@@ -303,13 +303,26 @@
 
 
     <script>
+    var menuOpen = false;
+
     function openNav() {
-        document.getElementById("navbar").style.width = "100%";
+        document.getElementById("navbar").style.height = "35%";
+        menuOpen = true;
     }
 
     function closeNav() {
-        document.getElementById("navbar").style.width = "0%";
+        document.getElementById("navbar").style.height = "0%";
+        menuOpen = false;
     }
+
+    function toggleNav(){
+      if(menuOpen == false){
+        openNav();
+      }else if(menuOpen == true){
+        closeNav();
+      }
+    }
+
     </script>
 
   </body>
