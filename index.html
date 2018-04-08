@@ -47,11 +47,11 @@
         <nav class ="navbar_overlay_content">
           <!-- <a href="#" id="menu-icon"></a> -->
           <ul>
-            <li><a href="#projects">Home</a></li>
-            <li><a href="#project_sparechange">Spare Change</a></li>
-            <li><a href="#project_boardgame">Board Game</a></li>
-            <li><a href="#about_me">About Me</a></li>
-            <li><a href="http://www.sfu.ca/~zhzhao/iat339/P03milestone1/styleguide.html">Style Guide</a></li>
+            <li><a onclick="closeNav()" href="#projects">Home</a></li>
+            <li><a onclick="closeNav()" href="#project_sparechange">Spare Change</a></li>
+            <li><a onclick="closeNav()" href="#project_boardgame">Board Game</a></li>
+            <li><a onclick="closeNav()" href="#about_me">About Me</a></li>
+            <li><a onclick="closeNav()" href="http://www.sfu.ca/~zhzhao/iat339/P03milestone1/styleguide.html">Style Guide</a></li>
           </ul>
         </nav>
       </div>
@@ -306,7 +306,7 @@
     var menuOpen = false;
 
     function openNav() {
-        document.getElementById("navbar").style.height = "35%";
+        document.getElementById("navbar").style.height = "30%";
         menuOpen = true;
     }
 
