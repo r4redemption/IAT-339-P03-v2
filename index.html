@@ -20,7 +20,7 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $('#fullpage').fullpage({
-          anchors: ['projects', 'project_sparechange', 'project_boardgame', 'about_me'],
+          anchors: ['landing','projects', 'project_sparechange', 'project_boardgame', 'about_me'],
           // sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
           slidesNavigation: true,
         });
@@ -43,7 +43,7 @@
       </a>
 
       <div id="navbar" class="navbar_overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
         <nav class ="navbar_overlay_content">
           <ul>
             <li><a onclick="closeNav()" href="#projects">Home</a></li>
@@ -60,6 +60,12 @@
 
 
     <section id="fullpage" class="main">
+
+      <div class="project_container section" id="section0">
+        <div id="landingPage">
+          <h1> IVAN ZHAO </h1>
+        </div>
+      </div>
 
       <div class="project_container section" id="section1">
         <div class ="project_content">
@@ -92,38 +98,17 @@
         <div class="project_content">
           <h1>Spare Change</h1>
 
-        <div class="project_intro slide">
-
-          <p>
-            <b>Partners:</b> Hector Bustillos, Christopher Wong, Phoebe Lim, Linda Shu <br>
-            <b>Programs Used:</b>  DAQRI 4D Studio Augmented Reality Program, Adobe Illustrator <br>
-            <b>My Role:</b> Concept Ideation, Interviewer, Media Content Creator
-          </p>
-        </div>
-
-
-
-          <!-- <div class="gallery" id="gal2">
-            <div class="gallery_icon"></div>
-            <div class="gallery_overlay">
-              <h2> Heroes and Dragons</h2>
-            </div>
+          <div class="project_intro slide">
+            <p>
+              <b>Partners:</b> Hector Bustillos, Christopher Wong, Phoebe Lim, Linda Shu <br>
+              <b>Programs Used:</b>  DAQRI 4D Studio Augmented Reality Program, Adobe Illustrator <br>
+              <b>My Role:</b> Concept Ideation, Interviewer, Media Content Creator
+            </p>
           </div>
 
-          <div class="project_slide slide">
-            <div class="project_img" id="sc1"></div>
-            <div class="project_desc">
-            <h2>Objective</h2>
-              <p>
-                This final project of our interactive art course was to integrate
-                artistic and interactive strategies into one final art piece.
-                Initially inspired by the “Humans of New York” blog, An idea of photographing students around campus and gathering their background stories was born.
-              </p>
-            </div>
-          </div> -->
-
         <div class="project_slide slide">
-          <div class="project_img" id="sc1">
+          <div class="project_img" id="sc1"></div>
+          <div class="invis_container">
             <div class="project_desc">
             <h2>Objective</h2>
             <p>
@@ -133,10 +118,11 @@
 
             </p>
             </div>
-          </div>
+            </div>
         </div>
         <div class="project_slide slide">
-          <div class="project_img" id="sc2">
+          <div class="project_img" id="sc2"></div>
+          <div class="invis_container">
           <div class="project_desc">
           <h2>Process</h2>
           <p>
@@ -149,7 +135,8 @@
           </div>
         </div>
         <div class="project_slide slide">
-          <div class="project_img" id="sc3">
+          <div class="project_img" id="sc3"></div>
+          <div class="invis_container">
           <div class="project_desc">
           <h2>Process</h2>
           <p>
@@ -163,7 +150,8 @@
           </div>
         </div>
         <div class="project_slide slide">
-          <div class="project_img" id="sc4">
+          <div class="project_img" id="sc4"></div>
+          <div class="invis_container">
           <div class="project_desc">
           <h2>Process</h2>
           <p>
@@ -177,7 +165,8 @@
           </div>
         </div>
         <div class="project_slide slide">
-          <div class="project_img" id="sc5">
+          <div class="project_img" id="sc5"></div>
+          <div class="invis_container">
             <div class="project_desc">
             <h2>Process</h2>
             <p>
@@ -189,15 +178,14 @@
             </div>
           </div>
         <div class="project_slide slide">
-          <div class="project_img" id="sc6">
+          <div class="project_img" id="sc6"></div>
+          <div class="invis_container">
             <div class="project_desc">
             <h2>Reflection</h2>
             <p>
               We are very pleased with the project.
               We’ve had more fun than we expected making a real human connection with these people.
-              <!-- It adequately reflects the status of the homeless not in a financial, but a personal manner. -->
               Our project reflected the status of the homeless in a personal matter and the interactive element added to the meaning of the project.
-              <!-- The project was meaningful and the interactive element added to the meaning of the project as well. -->
               However if given more time, we would have liked to include the audio / video recordings onto the poster as well,
               which we wanted to but unfortunately couldn’t due to a deadline restraint.
             </p>
@@ -221,7 +209,8 @@
             </p>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="bg1">
+            <div class="project_img" id="bg1"></div>
+            <div class="invis_container">
               <div class="project_desc">
               <h2>Objective</h2>
                 <p>
@@ -233,7 +222,8 @@
             </div>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="bg2">
+            <div class="project_img" id="bg2"></div>
+            <div class="invis_container">
               <div class="project_desc">
               <h2>Process</h2>
                 <p>
@@ -245,7 +235,8 @@
             </div>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="bg3">
+            <div class="project_img" id="bg3"></div>
+            <div class="invis_container">
               <div class="project_desc">
                 <h2>Process</h2>
                 <p>
@@ -257,7 +248,8 @@
             </div>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="bg4">
+            <div class="project_img" id="bg4"></div>
+            <div class="invis_container">
               <div class="project_desc">
                 <h2>Process</h2>
                 <p>
@@ -269,7 +261,8 @@
             </div>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="bg5">
+            <div class="project_img" id="bg5"></div>
+            <div class="invis_container">
               <div class="project_desc">
                 <h2>Process</h2>
                 <p>
@@ -281,7 +274,8 @@
             </div>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="bg6">
+            <div class="project_img" id="bg6"></div>
+            <div class="invis_container">
               <div class="project_desc">
                 <h2>Reflection </h2>
                 <p>
@@ -293,7 +287,8 @@
             </div>
           </div>
           <div class="project_slide slide">
-            <div class="project_img" id="bg7">
+            <div class="project_img" id="bg7"></div>
+            <div class="invis_container">
               <div class="project_desc">
                 <h2>Reflection </h2>
                 <p>
@@ -326,12 +321,12 @@
 
 
 
-      <footer id="footer">
+      <!-- <footer id="footer">
         <div class="footer_hline"></div>
         <div class="footer_info">
           <p> Ivan Zhao IAT 339 </p>
         </div>
-      </footer>
+      </footer> -->
 
 
 
@@ -343,7 +338,7 @@
     // var descOpen = false;
 
     function openNav() {
-        document.getElementById("navbar").style.height = "30%";
+        document.getElementById("navbar").style.height = "30vh";
         menuOpen = true;
     }
 
