@@ -26,11 +26,9 @@
   background: linear-gradient(#FCE0BA,#FCDBB0);
 }
 
-
 /* ====================================================================== */
-/* ======================================================= PHONE SETTINGS */
+/* ==================================================== LESS THAN 1200 PX */
 @media only screen and (max-width: 1199px){
-
 
   /* ============================================================== NAVBAR */
   #navbar{
@@ -38,7 +36,6 @@
     right:0;
     display: block;
     position:fixed;
-    /* left:1%; */
     z-index: 5;
 
     height: 0;
@@ -50,10 +47,14 @@
   }
 
   #dropicon{
+    cursor:pointer;
     position:absolute;
     /* float: right; */
-    right:0;
+    right:5vw;
     z-index: 11;
+    font-size:2em;
+    /* width: 16%; */
+    /* margin: 0 auto; */
   }
   .navbar_overlay_content{
     position: relative;
@@ -61,12 +62,12 @@
     /* height:25% */
     text-align: center;
   }
-  .overlay .closebtn {
-      position: absolute;
-      top: 20px;
-      right: 45px;
-      font-size: 60px;
-  }
+  /* .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  } */
   #navbar ul{
     list-style-type: none;
     margin: 0;
@@ -80,7 +81,7 @@
     display: block;
     /* width: 100px; */
     font-family: 'Lato', sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1em;
     transition: transform 0.8s;
     /* transition: 0.3s; */
@@ -105,9 +106,71 @@
       color: white;
   }
 
+  /* =========================================================PROJECT IMAGES */
+
+  .project_slide{
+    position:relative;
+    height: auto;
+    overflow:auto;
+    width:100%;
+    margin-bottom: 5vh;
+
+  }
+
+  .project_img{
+
+    position:absolute;
+    display: block;
+    width: 96%;
+    height:65vh;
+    border: solid 1px black;
+    left:0;
+    right: 0;
+    margin: 2% auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+  }
+
+
+  .project_desc{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    overflow-x: hidden;
+    bottom: 0%;
+    height: 10%;
+    transition: 0.5s ease;
+    left:0;
+    right: 0;
+    padding: 0 3%;
+  }
+  .project_desc h2{
+    text-align: right;
+    padding-right: 0.5em;
+    padding-top:0.25em;
+    color:white;
+    margin: 0;
+  }
+  .project_desc p{
+    color:white;
+  }
+  .project_slide:hover .project_desc{
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* #gal1 .project_desc{
+    color: white;
+  }
+  #gal2 .project_desc{
+    color: white;
+  } */
+
 
 }
-
+/* ========================================================================== */
+/* ======================================================== LARGER THAN 300PX */
 @media only screen and (min-width: 300px){
 
 
@@ -216,10 +279,7 @@
   float: left;
   width:100%;
   margin-bottom: 5vh;
-
 }
-
-
 
 .gallery_icon{
   display: block;
@@ -249,9 +309,7 @@
 .gallery_overlay h2{
   text-align: right;
   padding-right: 0.5em;
-  margin-top:0.5em;
-  margin-bottom:0;
-  /* margin:0; */
+  margin-top:0.25em;
 }
 .gallery:hover .gallery_overlay{
   height:100%;
@@ -358,6 +416,13 @@ body{
     width: 48%;
     margin: 0 1%;
   }
+  .gallery_overlay{
+    /* background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0%;
+    width: 100%; */
+    height: 20%;
+  }
   #projects{
     overflow: auto;
   }
@@ -413,8 +478,6 @@ body{
     display: none;
   }
 
-
-
   #navbar{
     float:left;
     left:0;
@@ -443,7 +506,23 @@ body{
     transition: transform 0.8s;
     text-decoration: none;
   }
-  .navbar_overlay_content{
+  #navbar a:link {
+      color: black;
+  }
+  #navbar a:visited {
+      color: black;
+  }
+  #navbar a:hover {
+      color: #8D8D8D;
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+  }
+  #navbar a:active {
+      color: white;
+  }
+
+  /* .navbar_overlay_content{
     position: relative;
     top: 25%;
     width: 100%;
@@ -456,7 +535,7 @@ body{
       top: 20px;
       right: 45px;
       font-size: 60px;
-  }
+  } */
 
 
   /* ------------------------------------------------------------ main styling */
@@ -474,8 +553,8 @@ body{
 
   .main p{
     font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
-    line-height: 140%;
+    font-size: 1.24em;
+    line-height: 145%;
     letter-spacing: 0.00625em;
     text-indent: 1.3em;
   }
