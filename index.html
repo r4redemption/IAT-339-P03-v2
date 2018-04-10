@@ -47,9 +47,9 @@
 
         <nav class ="navbar_overlay_content">
           <ul>
-            <li><a onclick="closeNav()" href="#projects">Home</a></li>
+            <li><a onclick="closeNav()" href="#projects">Projects</a></li>
             <li><a onclick="closeNav()" href="#project_sparechange">Spare Change</a></li>
-            <li><a onclick="closeNav()" href="#project_boardgame">Board Game</a></li>
+            <li><a onclick="closeNav()" href="#project_boardgame">Heroes and Dragons</a></li>
             <li><a onclick="closeNav()" href="#about_me">About Me</a></li>
             <li><a onclick="closeNav()" href="#references">References</a></li>
             <!-- <li><a onclick="closeNav()" href="http://www.sfu.ca/~zhzhao/iat339/P03milestone1/styleguide.html">Style Guide</a></li> -->
@@ -294,9 +294,8 @@
                 <h2>Process</h2>
                 <p>
                   When we conducted gameplay tests on our prototype, we realized that the game lasted too long.
-                  We lowered the victory point requirement, and introduced a new gold resource which could replace any other resource,
-                  or be used as currency. We also changed the map to support faster movement and more event tiles.
-                  Both these actions added more flow in gameplay as well as economy.
+                  We lowered the victory point requirement, introduced a new gold resource which could replace
+                  any other resource as currency, and changed the map for faster movement with more events for more flow in gameplay & economy.
                 </p>
               </div>
             </div>
@@ -335,19 +334,30 @@
           <div class ="project_title_box">
             <h1>About Me</h1>
           </div>
+
+        <div class="project_slide slide">
+            <div class="project_img" id="self"></div>
+            <div class="invis_container">
+              <div class="project_desc">
+
+                <p>
+                  <b>Hi There!</b>
+                  My name is Ivan, I'm currently a fourth year SFU student majoring in interactive arts and technology
+                  with a curious mind and an interest in all things interactive.
+                </p><p>
+                  I was introduced to games as a child and I soon fell in love with interactive mediums
+                  because unlike movies and books, my actions have consequences in both victory and defeat.
+                  This realization was empowering, especially when good times spent playing is with even good-er company!
+                </p><p>
+                  My passion lies in seeing people smile, and I aim to do so through my interactive projects :)
+                </p>
+              </div>
+            </div>
         </div>
-        <div class="project_intro slide">
-          <div class="project_content">
-            <p>
-              Hi! My name is Ivan, I'm currently a third year SFU student majoring in interactive arts and technology
-              with a curious mind and an interest in all things interactive.
-            </p>
-            <p>
-              My passion lies in seeing people smile, and I aim to do so through my interactive projects!
-            </p>
-          </div>
-        </div>
+
       </div>
+    </div>
+
 
       <div class="project_container section" id="section5">
         <div class="project_content">
@@ -355,22 +365,24 @@
             <h1>References</h1>
           </div>
         </div>
-        <div class="project_intro slide">
+        <div class="project_intro slide" id="refslide">
           <div class="project_content">
             <p>
               <b>References:</b> <br>
-              <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slidebottom">https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slidebottom</a><br>
-              <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_transparent_bottom">https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_transparent_bottom</a><br>
-              <a href="https://www.w3schools.com/cssref/sel_hover.asp">https://www.w3schools.com/cssref/sel_hover.asp</a><br>
-              <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery">https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery</a><br>
-              <a href="https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp">https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp</a><br><br>
-            </p><p>
+              <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slidebottom">Sliding Overlay Animation</a><br>
+              <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_transparent_bottom">Image Transparent Overlay Captioning</a><br>
+              <a href="https://www.w3schools.com/cssref/sel_hover.asp">Link Selectors</a><br>
+              <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery">Image Gallery Links</a><br>
+              <a href="https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp">Sliding Options/Nav</a><br>
+              <a href="https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/">Breaking Long Links</a><br>
+            </p>
+            <p>
               <b>One Page Scroll Effect:</b><br>
-              <a href="https://github.com/alvarotrigo/fullPage.js#fullpagejs">https://github.com/alvarotrigo/fullPage.js#fullpagejs</a><br><br>
-            </p><p>
+              <a href="https://github.com/alvarotrigo/fullPage.js#fullpagejs">Alvaro Trigo's One Page Scroll Effect</a><br>
+            </p>
+            <p>
               <b>Image:</b><br>
-              <a href="http://forgottenrealms.wikia.com/wiki/Red_dragon">http://forgottenrealms.wikia.com/wiki/Red_dragon</a><br><br>
-
+              <a href="http://forgottenrealms.wikia.com/wiki/Red_dragon">Red Dragon Image</a><br>
             </p>
           </div>
         </div>
@@ -379,7 +391,6 @@
     </section>
 
     <footer id="footer">
-      <!-- <div class="footer_hline"></div> -->
       <div class="footer_info">
         <p> Ivan Zhao | zhzhao@sfu.ca </p>
       </div>
@@ -394,7 +405,6 @@
 
     <script>
     var menuOpen = false;
-    // var descOpen = false;
 
     function openNav() {
         document.getElementById("navbar").style.height = "30vh";
@@ -413,15 +423,6 @@
         closeNav();
       }
     }
-
-    // function test(){
-    //   if(document.)
-    // }
-
-    // function openDesc(){
-    //   document.getElementById("navbar").style.height = "30%";
-    //   menuOpen = true;
-    // }
 
     </script>
 
