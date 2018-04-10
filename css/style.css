@@ -44,47 +44,95 @@
   background-image: url('img/DSC_0047.JPG');
 }
 #sc2{
-  background-image: url('img/DSC_0047.JPG');
+  background-image: url('img/DSC_0040.JPG');
 }
 #sc3{
-  background-image: url('img/DSC_0047.JPG');
+  background-image: url('img/Tim - nicest thing.png');
+  background-size: contain;
 }
 #sc4{
-  background-image: url('img/DSC_0047.JPG');
+  background-image: url('img/sc-daqri.png');
 }
 #sc5{
-  background-image: url('img/DSC_0047.JPG');
+  background-image: url('img/sc-wall-character-info.jpg');
 }
 #sc6{
-  background-image: url('img/DSC_0047.JPG');
+  background-image: url('img/sc-user-testing.jpg');
 }
 
 
 #bg1{
-  background-image: url('img/DSC_0047.JPG');
+  background-image: url('img/hnd-dragon-icon.jpg');
 }
 #bg2{
-  background-image: url('img/DSC_0047.JPG');
+  background-image: url('img/IAT312 board00.jpg');
 }
 #bg3{
-  background-image: url('img/DSC_0047.JPG');
+  background-image: url('img/IAT312 resources2.jpg');
 }
 #bg4{
-  background-image: url('img/DSC_0047.JPG');
+  background-image: url('img/hnd_random_events_example.png');
 }
 #bg5{
-  background-image: url('img/DSC_0047.JPG');
+  background-image: url('img/hnd-prototype-test.jpg');
 }
 #bg6{
-  background-image: url('img/DSC_0047.JPG');
+  background-image: url('img/hnd-user-testing-1.jpg');
 }
 #bg7{
-  background-image: url('img/DSC_0047.JPG');
+  background-image: url('img/hnd-user-testing-6.jpg');
 }
 
 /* ====================================================================== */
 /* ==================================================== LESS THAN 1200 PX */
 @media only screen and (max-width: 1199px){
+
+  #sc3{
+    background-size: contain;
+  }
+  #sc4{
+    background-position: 30% 50%;
+  }
+  #sc6{
+    background-position: 30% 50%;
+  }
+
+
+  #bg2{
+    background-size: contain;
+  }
+  #bg3{
+    background-size:contain;
+  }
+
+  /* ========================================PROJECT TITLE POSITIONING BOX */
+  .project_title_box{
+    position: relative;
+    height: 16vh;
+  }
+  .project_content{
+    width:80%;
+    margin: 0 auto;
+  }
+  .project_content h1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    /* bottom:70%; */
+    /* padding-left:25%; */
+    margin: 0 auto;
+
+    text-align: right;
+    font-size: 2em;
+    font-family: 'Europa', sans-serif;
+    padding:  0;
+    /* margin-top:1em; */
+    /* margin-bottom:0; */
+  }
+  .project_content p{
+    margin: 0;
+  }
 
   /* ============================================================== NAVBAR */
   #navbar{
@@ -176,7 +224,7 @@
     display: block;
     width: 96%;
     height:65vh;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     left:0;
     right: 0;
     margin: 2% auto;
@@ -189,7 +237,7 @@
     display: block;
     width: 96%;
     height:65vh;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     left:0;
     right: 0;
     margin: 2% auto;
@@ -219,10 +267,17 @@
     padding:5%;
     color:white;
   }
+
+  /* #sc3:hover  .project_desc{
+    height:65vh;
+    background-color: rgba(0, 0, 0, 1);
+  } */
   .project_slide:hover .project_desc{
     height:65vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
   }
+
+
 
 
 
@@ -384,17 +439,16 @@ body{
   height:84%;
   bottom:0;
 }
-.project_content{
+
+/* .project_content{
   width:80%;
-  /* padding-left:25%; */
   margin: 0 auto;
 }
 .project_content h1{
-  /* padding-top:30%; */
   bottom:70%;
-  /* padding-left:25%; */
   margin: 0 auto;
-}
+} */
+
 .main{
   position:absolute;
   height: auto;
@@ -441,6 +495,11 @@ body{
 /*======================================================== MONITOR SETTINGS */
 
 @media only screen and (min-width: 1200px) {
+
+  #bg4{
+    background-position: 50% 100%;
+  }
+
   #header{
     position: static;
   }
@@ -488,7 +547,7 @@ body{
     /* display: block; */
     width:65%;
     height:40vh;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     float:left;
     left:0;
     background-size: cover;
@@ -509,7 +568,13 @@ body{
     width:65%;
     padding-left:25%;
   }
+  .project_content h1{
+    /* padding-top:30%; */
 
+    bottom:70%;
+    /* padding-left:25%; */
+    margin: 0 auto;
+  }
   /* ------------------------------------------------------------ nav styling */
   #icontest{
     font-size: 2.5em;
