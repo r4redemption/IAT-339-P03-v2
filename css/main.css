@@ -28,6 +28,12 @@ section code {
 }
 
 
+h1 h2 h3{
+  font-family: 'Europa', sans-serif;
+}
+p{
+  font-family: 'Lato', sans-serif;
+}
 /*
   INTERACTIVE ELEMENTS -------------------
 */

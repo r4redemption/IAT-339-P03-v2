@@ -39,11 +39,6 @@
   background-image: url('img/hnd-dragon-icon.jpg');
 }
 
-
-/* #landingPage{
-  background-image: url('img/DSC_0047.JPG');
-} */
-
 #sc1{
   background-image: url('img/DSC_0047.JPG');
 }
@@ -114,12 +109,6 @@
   #bg3{
     background-size:contain;
   }
-
-
-
-
-
-
 
   /* ========================================PROJECT TITLE POSITIONING BOX */
   .project_title_box{
@@ -264,7 +253,6 @@
     margin:4%;
     color:white;
     font-size: 0.8em;
-    /* margin: 0; */
   }
 
   .project_slide:hover .project_desc{
@@ -461,35 +449,13 @@
 /* ============================================================= PAGE LAYOUT */
 #header{
   height: auto;
-  /* position: absolute; */
   overflow:hidden;
 }
-
-/* body{
-  background-color: #FCE4C4;
-  background-color: SAME AS OTHER WINDOW
-  margin: 0;
-} */
-
-/* .project_container{
-  height:84%;
-  bottom:0;
-} */
-
-/* .project_content{
-  width:80%;
-  margin: 0 auto;
-}
-.project_content h1{
-  bottom:70%;
-  margin: 0 auto;
-} */
 
 .main{
   position:absolute;
   height: auto;
   width:100%;
-  /* margin-left: 25%; */
 }
 .main .project_intro{
   text-align: right;
@@ -497,7 +463,6 @@
 }
 /* -------------------------------------------------------- top of home */
 #projects{
-  /* margin-top: 20vh; */
   overflow: auto;
 }
 #projects h1{
@@ -513,10 +478,7 @@
   clear: both;
 }
 
-
-
 .project_container{
-  /* margin-bottom: 6%; */
   position:relative;
 
 }
@@ -530,7 +492,6 @@
   position: fixed;
   width: 100%;
   text-align: center;
-  /* height: 5vh; */
   bottom:0;
   font-family: 'Lato', sans-serif;
   font-size: 0.9em;
@@ -574,17 +535,6 @@ a:active {
     background-position: 50% 100%;
   }
 
-  /* #landingPage h1{
-    position: absolute;
-    color: white;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 55vh;
-    text-align: center;
-    font-size: 7em;
-  } */
-
   .mobile_triangle{
     display: none;
   }
@@ -594,10 +544,6 @@ a:active {
     margin: 0 1%;
   }
   .gallery_overlay{
-    /* background-color: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    bottom: 0%;
-    width: 100%; */
     height: 20%;
   }
   #projects{
@@ -618,10 +564,8 @@ a:active {
   .project_img{
     margin: 0.5em;
     position:absolute;
-    /* display: block; */
     width:65%;
     height:40vh;
-    /* border: solid 1px black; */
     float:left;
     left:0;
     background-size: cover;
@@ -634,7 +578,6 @@ a:active {
     right:0;
     top: 10vh;
     width:33%;
-    /* padding: 0.5em; */
   }
 
   .project_content{
@@ -643,10 +586,7 @@ a:active {
     padding-left:25%;
   }
   .project_content h1{
-    /* padding-top:30%; */
-
     bottom:70%;
-    /* padding-left:25%; */
     margin: 0 auto;
   }
   /* ------------------------------------------------------------ nav styling */
@@ -682,7 +622,6 @@ a:active {
   }
   #navbar ul li a{
     display: block;
-    /* width: 100px; */
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     line-height: 1em;
@@ -729,25 +668,9 @@ a:active {
   }
   .main h1{
     text-align: right;
-    /* font-size: 2em; */
     font-family: 'Europa', sans-serif;
-    /* padding: 0.5em 0; */
-    /* margin-top:1em; */
     margin-bottom:0;
   }
-
-  /* .main h2{
-    font-size: 1.5em;
-    font-family: 'Europa', sans-serif;
-  } */
-
-  /* .main p{
-    font-family: 'Lato', sans-serif;
-    font-size: 1.15em;
-    line-height: 150%;
-    letter-spacing: 0.00625em;
-    text-indent: 1.3em;
-  } */
 
 
   #footer{
