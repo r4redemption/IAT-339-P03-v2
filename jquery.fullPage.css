@@ -5,7 +5,16 @@
  *
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
-
+ @media only screen and (max-width: 1199px) {
+   .fp-slidesNav.bottom {
+       bottom: 8vh;
+   }
+ }
+ @media only screen and (min-width: 1200px) {
+   .fp-slidesNav.bottom {
+       bottom: 6vh;
+   }
+}
  @media only screen and (min-width: 300px) {
 html.fp-enabled,
 .fp-enabled body {
@@ -120,9 +129,9 @@ html.fp-enabled,
     margin: 0 auto;
     left: 48vw;
 }
-.fp-slidesNav.bottom {
-    bottom: 4vh;
-}
+/* .fp-slidesNav.bottom {
+    bottom: 6vh;
+} */
 .fp-slidesNav.top {
     top: 17px;
 }
